@@ -1,3 +1,4 @@
+print("BIENVENIDO")
 temperaturas = [
     [   # Ciudad 1
         [   # Semana 1
@@ -142,5 +143,5 @@ def calcular_promedio(temperaturas, ciudad_idx):
 
     opcion = input ("ingrese la opcion buscada: ")
     if opcion == "2":
-     promedio = calcular_promedio(temperaturas, 0)
+        promedio = calcular_promedio(temperaturas, 0)
     print(f'promedio {promedio}')
