@@ -1,46 +1,40 @@
-from idlelib.debugobj import myrepr
-
 print("/////////Tarea: Trabajo con Archivos de Texto en Python////////")
 
-# Abrimos el archivo en modo escritura
-with open("my_notes.txt", "w") as file:
-
-#1.Escritura de Archivo de Texto:
-
-#nombre del archivo
- file_name = "my_notes.txt"
-print(file_name)
+#Abrimos archivos en Python
+file_name = "mis_notas_personales.txt"
 
 #modo de apertura: "w" para la escritura (write)
-file.write("Linea 1 : Estoy aprendiendo en Python \n")
-file.write("Linea 2 : Me gusta aprender cosas nuevas \n")
-file.write("Linea 3 : Me gusta dormir mucho \n")
+#abrimos el archivo que creamos
 
-#metodo del writelines () : escribimos la lista de lineas
-lineas = ("linea 3 : todos los dias aprendo \n", "linea 4 : fin ejemplos \n ")
-
-file.writelines(lineas)
-file.write.close()
-
-#abrimos el archivos que creamos.
 archivo = open(file_name, "w")
+print(file_name)
 
-file = open ("my_notes.txt", "w")
+#metodo write(): una linea a la vex
+archivo.write('Linea 1: Tengo 21 años. \n')
+archivo.write('Linea 2: Estudio en la UEA. \n')
+archivo.write('Linea 3: Vivo en Shell provincia de Pastaza. \n')
 
-file.write("Estudio en la UEA.\n " )
+#metodo writelines(): escribe una lista de lineas
+lineas = ["Linea 3: Cumplo años en diciembre \n", "Linea 2: Mi ma es... \n"]
+mis_notas_personales.writelineas(lineas)
 
-file.write("Tengo 21 años. \n ")
+#modo apertura: "r" para la lectura (read)
+archivo_lectura = open(file_name, "r")
+#metodo readline()
+#leemos y mostramos el contenido
+contenido = archivo_lectura.read()
+print("contenido del archivo despues de escribir")
+print(contenido)
 
-file.write("vivo en Shell provincia Pastaza. \n ")
+#cerramos el archivo de lectura
+archivo_lectura.close()
 
-file.close()
 
-#ahora haremos las lineas personales del archivo read y readline
-file = open ("my_notes.txt", "r")
-my_notes.write("linea 1 : Me gusta jugar en el celular")
-my_notes.write("linea 2 : mi hija se llama Camila")
-my_notes.write("linea 3 : me gusta viajar")
 
-print( file.readlines() )
-file.close()
+
+
+
+
+
+
 
